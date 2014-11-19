@@ -95,7 +95,7 @@ public class SmartSearchUtil {
 //        //匹配表达式的长度
 		char ch = name.charAt(index);
         //是汉字   regex是字母
-		if (isHanzi(ch)&&isLetter(r.charAt(0))) {
+		if (isHanzi(ch)&&isLetter(r.charAt(0))&&(find(ch)!=null)) {
             //ch是汉字
 				 String[] pinyins =find(ch);
                  List<String> pinyinSet=new ArrayList<String>();
